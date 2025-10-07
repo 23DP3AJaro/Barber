@@ -11,7 +11,28 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
+        <span id="burgericon">&#9776;</span>
     </header>
+    <div id="burger" style="display: none;">
+        <div id="burger-header">
+            <a href="#" class="burger-header-link">Home</a>
+            <a href="#" class="burger-header-link">About</a>
+            <a href="#" class="burger-header-link">Contact</a>
+        </div>
+        <hr>
+        <div id="burger-funcs">
+            <div id="dropdown">
+                    <a href="#" id="dropbtn">&rAarr; Services</a>
+                    <div id="dropdown-content">
+                        <a href="#">Haircut</a>
+                        <a href="#">Hair wash</a>
+                        <a href="#">Hair coloring</a>
+                    </div>
+                </div>
+            <a>Reserve</a>
+            <a id="burger-switch-theme">Switch theme</a>
+        </div>
+    </div>
     <main>
         <aside>
             <img src="img/logo.png">
@@ -101,5 +122,6 @@
     <footer>&copy;Artjoms Jarockis</footer>
     <script src="ThemeSwitch.js"></script>
     <script src="ModalFuncs.js"></script>
+    <script src="burger.js"></script>
 </body>
 </html>

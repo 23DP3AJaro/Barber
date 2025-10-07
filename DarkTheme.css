@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    background-color: #14213D;
+    background-color: #202e4d;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 header {
     width: 100%;
-    background-color: #FCA311;
+    background-color: #14213d;
     height: 3rem;
     font-weight: 700;
     font-size: 1.2rem;
@@ -18,13 +18,23 @@ header {
 
 header a {
     text-decoration: none;
-    color: #14213D;
+    color: #e5e5e5;
     transition: 0.2s;
 }
 
 header a:hover {
-    color: #e5e5e5;
+    color: #FCA311;
     transition: 0.2s;
+}
+
+#burger {
+    display: none;
+}
+
+#burgericon {
+    color: #e5e5e5;
+    display: none;
+    margin-left: 20px;
 }
 
 main {
@@ -129,8 +139,7 @@ hr {
 }
 
 .card {
-    border: 2px solid rgb(255, 253, 253);
-    background-color: #FCA311;
+    border: 2px solid rgb(246, 246, 246);
     border-radius: 10px;
     width: 20rem;
     display: flex;
@@ -138,8 +147,9 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    box-shadow: 5px 5px 0px #e5e5e5;
+    box-shadow: 5px 5px 0px #d1d1d1;
     transition: 0.2s;
+    color: #e5e5e5;
 }
 
 .card:hover {
@@ -170,21 +180,153 @@ hr {
     height: 2.5rem;
     color: #e5e5e5;
     margin-bottom: 20px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .card button:hover {
-    background-color: #e5e5e5;
-    color: #14213D;
-    transition: 0.2s;
+    background: #FCA311;
+background: linear-gradient(90deg,rgba(252, 163, 17, 1) 0%, rgba(20, 33, 61, 1) 59%);   
+    color: #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#modal1 {
+    display: none;
+}
+
+#modal2 {
+    display: none;
+}
+
+#modal3 {
+    display: none;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer {
-    background-color:#FCA311;
-    color: #14213D;
+    background-color:#14213d;
+    color: #e5e5e5;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3rem;
+}
+
+@media screen and (max-width: 1300px) {
+    #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        justify-content: left;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    #burger {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #202e4d;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        color: #e5e5e5;
+
+    }
+
+    #burger-header a {
+        text-decoration: none;
+        color: #fca311;
+    }
+
+    #burger-header {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #burger-funcs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #burger-funcs a {
+        text-decoration: none;
+        color: #e5e5e5;
+    }
+
+    #burgericon {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    #MainContent {
+        width: 100%;
+    }
+
+    #BlackSquare {
+        height: 30rem;
+    }
+
+    #MainContentBackground {
+        width: 100%;
+        height: 30rem;
+        background-image:url(img/mainbg.png);
+        background-size: cover;
+        background-position-y: -480px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
 }

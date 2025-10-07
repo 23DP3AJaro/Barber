@@ -27,6 +27,16 @@ header a:hover {
     transition: 0.2s;
 }
 
+#burger {
+    display: none;
+}
+
+#burgericon {
+    color: #e5e5e5;
+    display: none;
+    margin-left: 20px;
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -213,7 +223,6 @@ hr {
   width: 80%;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
@@ -242,5 +251,81 @@ footer {
     #cards {
         flex-direction: column;
         align-items: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        justify-content: left;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    #burger {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #202e4d;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        color: #e5e5e5;
+
+    }
+
+    #burger-header a {
+        text-decoration: none;
+        color: #fca311;
+    }
+
+    #burger-header {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #burger-funcs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #burger-funcs a {
+        text-decoration: none;
+        color: #e5e5e5;
+    }
+
+    #burgericon {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    #MainContent {
+        width: 100%;
+    }
+
+    #BlackSquare {
+        height: 30rem;
+    }
+
+    #MainContentBackground {
+        width: 100%;
+        height: 30rem;
+        background-image:url(img/mainbg.png);
+        background-size: cover;
+        background-position-y: -480px;
+    }
+
+    footer {
+        margin-top: 50px;
     }
 }

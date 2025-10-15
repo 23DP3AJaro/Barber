@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    background-color: #e5e5e5;
+    background-color: #f8f8f8;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 header {
     width: 100%;
-    background-color: #14213d;
+    background-color: #2D2C2C;
     height: 3rem;
     font-weight: 700;
     font-size: 1.2rem;
@@ -45,7 +45,7 @@ main {
 aside {
     width: 20%;
     height: 74rem;
-    background-color: #fca311;
+    background-color: #A9A9A9;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -63,10 +63,12 @@ aside {
     text-decoration: none;
     font-weight: 500;
     font-size: larger;
+    transition: 0.2s;
 }
 
 #AsideNav a:hover {
-    color: #e5e5e5;
+    color: #838383;
+    transition: 0.2s;
 }
 
 #dropdown {
@@ -77,7 +79,8 @@ aside {
   display: none;
   flex-direction: column;
   position: absolute;
-  background-color: #FCA311;
+  background-color: #bebebe;
+  margin-left: 2.2rem;
   min-width: 200px;
   border: 1px solid black;
   padding: 0.5rem;
@@ -123,6 +126,10 @@ aside img {
     margin: 2rem;
     font-weight: 500;
     color: #14213d;
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    line-height: 25px;
 }
 
 hr {
@@ -147,7 +154,7 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    box-shadow: 5px 5px 0px #fca311;
+    box-shadow: 5px 5px 0px #202e4d;
     transition: 0.2s;
 }
 
@@ -238,7 +245,7 @@ hr {
 }
 
 footer {
-    background-color:#14213d;
+    background-color:#2D2C2C;
     color: #e5e5e5;
     font-weight: 600;
     display: flex;
@@ -272,7 +279,7 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #202e4d;
+        background-color: #525252;
         padding-top: 1rem;
         padding-bottom: 1rem;
         font-size: 1.5rem;
@@ -282,7 +289,7 @@ footer {
 
     #burger-header a {
         text-decoration: none;
-        color: #fca311;
+        color: black;
     }
 
     #burger-header {

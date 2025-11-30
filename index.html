@@ -1,127 +1,179 @@
 <!DOCTYPE html>
 <html lang="lv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber</title>
-    <link rel="stylesheet" href="LightTheme.css" id="Theme-link">
-</head>
-<body>
+    <link rel="stylesheet" href="LightTheme.css" id="Theme-link" />
+  </head>
+  <body>
     <header>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <span id="burgericon">&#9776;</span>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+
+      <span id="burgericon">&#9776;</span>
     </header>
-    <div id="burger" style="display: none;">
-        <div id="burger-header">
-            <a href="#" class="burger-header-link">Home</a>
-            <a href="#" class="burger-header-link">About</a>
-            <a href="#" class="burger-header-link">Contact</a>
+    <div id="burger" style="display: none">
+      <div id="burger-header">
+        <a href="#" class="burger-header-link">Home</a>
+        <a href="#" class="burger-header-link">About</a>
+        <a href="#" class="burger-header-link">Contact</a>
+      </div>
+      <hr />
+      <div id="burger-funcs">
+        <div id="dropdown">
+          <a href="#" id="dropbtn">&rAarr; Services</a>
+          <div id="dropdown-content">
+            <a href="#">Haircut</a>
+            <a href="#">Hair wash</a>
+            <a href="#">Hair coloring</a>
+          </div>
         </div>
-        <hr>
-        <div id="burger-funcs">
-            <div id="dropdown">
-                    <a href="#" id="dropbtn">&rAarr; Services</a>
-                    <div id="dropdown-content">
-                        <a href="#">Haircut</a>
-                        <a href="#">Hair wash</a>
-                        <a href="#">Hair coloring</a>
-                    </div>
-                </div>
-            <a>Reserve</a>
-            <a id="burger-switch-theme">Switch theme</a>
-        </div>
+        <a>Reserve</a>
+        <a id="burger-switch-theme">Switch theme</a>
+      </div>
     </div>
     <main>
-        <aside>
-            <img src="img/logo.png">
-            <div id="AsideNav">
-                <div id="dropdown">
-                    <a href="#" id="dropbtn">&rAarr; Services</a>
-                    <div id="dropdown-content">
-                        <a href="#">Haircut</a>
-                        <a href="#">Hair wash</a>
-                        <a href="#">Hair coloring</a>
-                    </div>
-                </div>
-                <a href="#">Reserve</a>
-                <a href="#" id="ThemeSwitcher">Switch theme</a>
+      <aside>
+        <img src="img/logo.png" />
+        <div id="AsideNav">
+          <div id="dropdown">
+            <a href="#" id="dropbtn">&rAarr; Services</a>
+            <div id="dropdown-content">
+              <a href="#">Haircut</a>
+              <a href="#">Hair wash</a>
+              <a href="#">Hair coloring</a>
             </div>
-        </aside>
-        <div id="MainContent">
-            <div id="MainContentBackground"><div id="BlackSquare"></div></div>
-            <h1>Best barbers</h1>
-            <p id="MainText">Our barbers are the best for real for real Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt vitae iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt numquam alias, natus autem dolorum dicta similique culpa odit iusto maiores animi est excepturi quasi ea veniam esse, earum asperiores doloribus laudantium? Animi voluptatem laborum rerum, quia laudantium reiciendis itaque temporibus odit quidem nam eveniet accusantium voluptatum? Amet placeat rem ipsam obcaecati unde a deserunt aliquam porro repudiandae at aliquid, molestiae alias eligendi velit esse vel consequatur! Qui nemo magnam esse, et enim asperiores vero sed hic ipsa eos, non laboriosam quibusdam. Eius, autem corporis provident quasi praesentium fuga neque accusantium.</p>
-            <hr>
-            <div id="cards">
-                <div class="card" id="card1">
-                    <img src="img/shrimp.jpg">
-                    <h2>Sam</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptatem cum a.</p>
-                    <button>Reserve</button>
-                </div>
-                <div class="card" id="card2">
-                    <img src="img/barber2.png">
-                    <h2>Peter</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem porro dolore quae.</p>
-                    <button>Reserve</button>
-                </div>
-                <div class="card" id="card3">
-                    <img src="img/barber3.png">
-                    <h2>Adolf</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quibusdam cumque ex?</p>
-                    <button>Reserve</button>
-                </div>
-            </div>
-            <div id="modals">
-                <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="close1">&times;</span>
-                        <h2>Sam's working hours:</h2>
-                        <p>Mo: 9.00 - 12.00</p>
-                        <p>Tu: 9.00 - 12.00</p>
-                        <p>We: 9.00 - 12.00</p>
-                        <p>Th: -</p>
-                        <p>Fr: Ballin</p>
-                        <p>Sa: -</p>
-                        <p>Su: -</p>
-                    </div>
-                </div>
-
-                <div id="modal2" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="close2">&times;</span>
-                        <h2>Peter's working hours:</h2>
-                        <p>Mo: -</p>
-                        <p>Tu: -</p>
-                        <p>We: -</p>
-                        <p>Th: 9.00 - 12.00</p>
-                        <p>Fr: 9.00 - 12.00</p>
-                        <p>Sa: 9.00 - 12.00</p>
-                        <p>Su: 9.00 - 12.00</p>
-                    </div>
-                </div>
-
-                <div id="modal3" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="close3">&times;</span>
-                        <h2>Peter's working hours:</h2>
-                        <p>Mo: 00.00 - 24.00</p>
-                        <p>Tu: 00.00 - 24.00</p>
-                        <p>We: 00.00 - 24.00</p>
-                        <p>Th: 00.00 - 24.00</p>
-                        <p>Fr: 00.00 - 24.00</p>
-                        <p>Sa: 00.00 - 24.00</p>
-                        <p>Su: 00.00 - 24.00</p>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <a href="#">Reserve</a>
+          <a href="#" id="ThemeSwitcher">Switch theme</a>
         </div>
+      </aside>
+      <div id="MainContent">
+        <div id="MainContentBackground"><div id="BlackSquare"></div></div>
+        <h1>Best barbers</h1>
+        <p id="MainText">
+          Our barbers are the best for real for real Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Saepe nesciunt vitae iure. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Nesciunt numquam alias,
+          natus autem dolorum dicta similique culpa odit iusto maiores animi est
+          excepturi quasi ea veniam esse, earum asperiores doloribus laudantium?
+          Animi voluptatem laborum rerum, quia laudantium reiciendis itaque
+          temporibus odit quidem nam eveniet accusantium voluptatum? Amet
+          placeat rem ipsam obcaecati unde a deserunt aliquam porro repudiandae
+          at aliquid, molestiae alias eligendi velit esse vel consequatur! Qui
+          nemo magnam esse, et enim asperiores vero sed hic ipsa eos, non
+          laboriosam quibusdam. Eius, autem corporis provident quasi praesentium
+          fuga neque accusantium.
+        </p>
+        <hr />
+        <div id="Search-Container">
+          <input id="Search" placeholder="Search"/>
+        </div>
+        <div id="cards">
+          <div class="card" id="card1">
+            <img src="img/shrimp.jpg" />
+            <h2>Sam</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+              voluptatem cum a.
+            </p>
+            <button>Reserve</button>
+          </div>
+          <div class="card" id="card2">
+            <img src="img/barber2.png" />
+            <h2>Peter</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              porro dolore quae.
+            </p>
+            <button>Reserve</button>
+          </div>
+          <div class="card" id="card3">
+            <img src="img/barber3.png" />
+            <h2>Adolf</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              quibusdam cumque ex?
+            </p>
+            <button>Reserve</button>
+          </div>
+        </div>
+        <div id="modals">
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span class="close" id="close1">&times;</span>
+              <h2>Sam's working hours:</h2>
+              <p>Mo: 9.00 - 12.00</p>
+              <p>Tu: 9.00 - 12.00</p>
+              <p>We: 9.00 - 12.00</p>
+              <p>Th: -</p>
+              <p>Fr: Ballin</p>
+              <p>Sa: -</p>
+              <p>Su: -</p>
+            </div>
+          </div>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close" id="close2">&times;</span>
+              <h2>Peter's working hours:</h2>
+              <p>Mo: -</p>
+              <p>Tu: -</p>
+              <p>We: -</p>
+              <p>Th: 9.00 - 12.00</p>
+              <p>Fr: 9.00 - 12.00</p>
+              <p>Sa: 9.00 - 12.00</p>
+              <p>Su: 9.00 - 12.00</p>
+            </div>
+          </div>
+
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <span class="close" id="close3">&times;</span>
+              <h2>Peter's working hours:</h2>
+              <p>Mo: 00.00 - 24.00</p>
+              <p>Tu: 00.00 - 24.00</p>
+              <p>We: 00.00 - 24.00</p>
+              <p>Th: 00.00 - 24.00</p>
+              <p>Fr: 00.00 - 24.00</p>
+              <p>Sa: 00.00 - 24.00</p>
+              <p>Su: 00.00 - 24.00</p>
+            </div>
+          </div>
+        </div>
+        <hr style="margin-top: 30px" />
+        <div id="Contact-Form-spizdil">
+          <form class="form">
+            <h2>CONTACT US</h2>
+            <p type="Name:"><input placeholder="Name" id="name" /></p>
+            <p type="Email:">
+              <input placeholder="E-mail" id="email" />
+            </p>
+            <p id="email-error" hidden>Incorrect e-mail</p>
+            <p type="Message:">
+              <input placeholder="Message" id="message" />
+            </p>
+            <button type="submit" id="contact-submit">Send Message</button>
+            <p id="Form-status"></p>
+          </form>
+        </div>
+        <hr style="margin-top: 30px" />
+        <h2 style="display: flex; justify-self: center">API</h2>
+        <div id="Films">
+          <h3 id="loading">Loading...</h3>
+          <div id="films"></div>
+        </div>
+      </div>
     </main>
+
     <footer>&copy;Artjoms Jarockis</footer>
     <script src="ThemeSwitch.js"></script>
     <script src="ModalFuncs.js"></script>
     <script src="burger.js"></script>
-</body>
+    <script src="validation.js"></script>
+    <script src="search.js"></script>
+    <script src="api.js"></script>
+  </body>
 </html>

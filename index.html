@@ -11,6 +11,7 @@
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
+
       <span id="burgericon">&#9776;</span>
     </header>
     <div id="burger" style="display: none">
@@ -67,6 +68,9 @@
           fuga neque accusantium.
         </p>
         <hr />
+        <div id="Search-Container">
+          <input id="Search" placeholder="Search"/>
+        </div>
         <div id="cards">
           <div class="card" id="card1">
             <img src="img/shrimp.jpg" />
@@ -143,18 +147,23 @@
         <div id="Contact-Form-spizdil">
           <form class="form">
             <h2>CONTACT US</h2>
-            <p type="Name:"><input placeholder="Name" id="name"/></p>
+            <p type="Name:"><input placeholder="Name" id="name" /></p>
             <p type="Email:">
-              <input placeholder="E-mail" id="email"/>
+              <input placeholder="E-mail" id="email" />
             </p>
             <p id="email-error" hidden>Incorrect e-mail</p>
             <p type="Message:">
-              <input placeholder="Message" id="message"/>
+              <input placeholder="Message" id="message" />
             </p>
             <button type="submit" id="contact-submit">Send Message</button>
             <p id="Form-status"></p>
           </form>
-          
+        </div>
+        <hr style="margin-top: 30px" />
+        <h2 style="display: flex; justify-self: center">API</h2>
+        <div id="Films">
+          <h3 id="loading">Loading...</h3>
+          <div id="films"></div>
         </div>
       </div>
     </main>
@@ -164,5 +173,7 @@
     <script src="ModalFuncs.js"></script>
     <script src="burger.js"></script>
     <script src="validation.js"></script>
+    <script src="search.js"></script>
+    <script src="api.js"></script>
   </body>
 </html>

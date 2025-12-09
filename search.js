@@ -8,9 +8,9 @@ searchInput.addEventListener('input', (e) => {
         const cardName = card.querySelector('h2').textContent.toLowerCase();
         
         if (cardName.includes(searchText)) {
-            card.style.visibility = 'visible';
+            card.style.display = 'flex';
         } else {
-            card.style.visibility = 'hidden';
+            card.style.display = 'none';
         }
     });
 });

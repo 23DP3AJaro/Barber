@@ -7,7 +7,8 @@ async function FetchMovies(){
           }
         }
 
-        const response = await fetch('https://picsum.photos/v2/list?page=2&limit=10', options);
+        const page = Math.floor(Math.random() * 10) + 1;
+        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=6`, options);
         if (!response.ok) {
             console.error('Fetch failed with status', response.status);
             return [];

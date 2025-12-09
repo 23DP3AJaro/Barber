@@ -69,7 +69,7 @@ main {
 
 aside {
     width: 20%;
-    height: 300rem;
+    height: 155rem;
     background-color: #0e182e;
     display: flex;
     align-items: center;
@@ -413,6 +413,10 @@ footer {
 
     #MainContent {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     #BlackSquare {
@@ -425,6 +429,11 @@ footer {
         background-image:url(img/mainbg.png);
         background-size: cover;
         background-position-y: -480px;
+    }
+
+    #Films {
+        display: flex;
+        flex-direction: column;
     }
 
     footer {
